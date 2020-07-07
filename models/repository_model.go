@@ -1,11 +1,7 @@
-package model
-
-import (
-	"encoding/json"
-)
+package models
 
 type Owner struct {
-	Login string `json:"lofin"`
+	Login string `json:"login"`
 }
 
 type Item struct {
@@ -19,6 +15,6 @@ type Item struct {
 }
 
 type JSONData struct {
-	Count int `json:"count"`
+	Count int `json:"total_count"`
 	Items []Item
 }

@@ -25,6 +25,7 @@ func GetListRepositories(url string) {
 	if res.StatusCode != http.StatusOK {
 		log.Fatal("Unexpected status code", res.StatusCode)
 	}
+
 	data := models.JSONData{}
 	err = json.Unmarshal(body, &data)
 	if err != nil {
